@@ -3,7 +3,7 @@ name: Build Custom ISO
 
 on:
   workflow_dispatch:
-  schedule:
+#  schedule:
 #    - cron: '0 0 * * 0'  # Weekly on Sunday
 
 jobs:
