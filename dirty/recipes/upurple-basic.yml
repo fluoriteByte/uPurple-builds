@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-stage-list-v1.json
+name: upurple
+description: it's a distro, alright.
+
+base-image: ghcr.io/bootcrew/arch-bootc
+image-version: latest
+
+modules:
+  - from-file: steps/install-patheon.yml
+  - type: default-flatpaks
+    configurations:
+      - notify: true # Send notification after install/uninstall is finished (true/false)
+        scope: system
+      - scope: user # Also add Flathub user repo, but no user packages
+
+  - type: signing
