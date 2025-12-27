@@ -1,0 +1,3 @@
+[submodule "uPurple"]
+	path = uPurple
+	url = ssh://git@codeberg.org/fluoriteByte/uPurple.git
