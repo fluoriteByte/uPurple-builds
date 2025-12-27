@@ -24,7 +24,7 @@ jobs:
         id: build
         uses: ublue-os/titanoboa@main
         with:
-          image-ref: quay.io/repository/fedora/fedora-coreos:latest
+          image-ref: quay.io/fedora/fedora-bootc:latest
 #          flatpaks-list: ${{ github.workspace }}/config/flatpaks.list #already done by bluebuild
 #          hook-post-rootfs: ${{ github.workspace }}/config/configure-iso.sh
           compression: squashfs
