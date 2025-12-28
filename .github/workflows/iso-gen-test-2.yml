@@ -21,7 +21,7 @@ jobs:
           image_name: upurple
           image_repo: ghcr.io/fluoritebyte
           image_tag: latest
-          version: 49
+          version: 43
           variant: Server
           iso_name: upurple-${{ github.head_ref }}-${{ github.sha }}.iso
 
